@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 class HornedBeast extends React.Component {
     render (){
 
@@ -6,7 +6,7 @@ class HornedBeast extends React.Component {
             <div>
                 <h2>{this.props.name}</h2>
               
-                <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg" alt="1"/>
+                <img src={this.props.url} />
                 <p>{this.props.description}</p>
             </div>
         )
