@@ -1,7 +1,15 @@
 import React from 'react';
 import HornedBeast from './hornedBeast';
 class Main extends React.Component {
+
+  constructor (props)
+  {
+    super (props);
+  }
+
+
   render() {
+
     return (
       <div>
         <HornedBeast name={'UniWhal'} />
