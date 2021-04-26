@@ -4,20 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 class HornedBeast extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state =
-      { count: 0, };
-  }
-  increaseCount = () => {
-    this.setState(
-      {
-        count: this.state.count + 1
-      }
-
-    );
-  }
-
 
   render() {
 

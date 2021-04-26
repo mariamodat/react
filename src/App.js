@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap/Card'
 
 import Main from './components/main';
 import Header from './components/header';
