@@ -3,7 +3,19 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class HornedBeast extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state =
+      { count: 0, };
+  }
+  increaseCount = () => {
+    this.setState(
+      {
+        count: this.state.count + 1
+      }
 
+    );
+  }
 
   render() {
 
@@ -22,7 +34,7 @@ class HornedBeast extends React.Component {
               {this.props.disc}
             </Card.Text>
             <Card.Text>
-              likes {this.state.count}
+              💖 {this.state.count}
             </Card.Text>
           </Card.Body>
         </Card>
