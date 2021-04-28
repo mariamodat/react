@@ -5,10 +5,9 @@ import CardColumns from 'react-bootstrap/CardColumns';
 
 
 class Main extends React.Component {
-  showDetails = (e) => {
-    e.preventDefault();
 
-  }
+
+
 
   render() {
 
@@ -22,7 +21,8 @@ class Main extends React.Component {
 
             <HornedBeast img={horn.image_url}
               title={horn.title}
-              disc={horn.description} />
+              disc={horn.description}
+              clickFunc={this.props.clickFunc} />
 
 
 

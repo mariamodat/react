@@ -1,3 +1,53 @@
+#  Horn Beast lab Overview
+By the end of this week, I will create an application that displays images and information of horned animals. This application will allow the user s to filter the images by number of horns and chose your favorite image.
+
+
+
+# Time estimation 
+# lab 02
+Number and name of feature: 
+ * #1: Display images
+ * #2: Allow users to vote for their favorite beast
+ * 3: Bootstrap
+
+Estimate of time needed to complete: 3 hours
+
+Start time: 3 pm 
+
+Finish time: 7 pm 
+
+Actual time needed to complete: 4 hours
+
+
+# lab 03
+Number and name of feature: 
+ * 1: Display a Modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 9 pm 
+
+Finish time: 12 pm 
+
+Actual time needed to complete: 3 hours
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
