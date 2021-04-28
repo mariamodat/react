@@ -16,6 +16,8 @@ class HornedBeast extends React.Component {
     );
   }
 
+
+
   render() {
 
 
@@ -37,7 +39,7 @@ class HornedBeast extends React.Component {
             </Card.Text>
           </Card.Body>
         </Card>
-        <br />
+
 
       </div>
     );
