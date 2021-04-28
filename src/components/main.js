@@ -1,30 +1,39 @@
 import React from 'react';
 import HornedBeast from './hornedBeast';
 import dataJson from './data.json';
-import CardDeck from 'react-bootstrap/Card';
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 class Main extends React.Component {
 
 
+
+
   render() {
 
 
-    return dataJson.map(horn => {
-      return (
-        <div>
-          <CardDeck>
+    return (
+      <CardColumns>
+        {dataJson.map(horn => {
+
+          return (
+
+
             <HornedBeast img={horn.image_url}
               title={horn.title}
-              disc={horn.description} />
+              disc={horn.description}
+              clickFunc={this.props.clickFunc} />
 
-          </CardDeck>
 
 
-        </div>
-      );
-    });
 
+
+
+          );
+        })}
+      </CardColumns>
+
+    );
   }
 
 }
