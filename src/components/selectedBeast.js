@@ -8,8 +8,7 @@ class SelectedBeast extends React.Component {
     return (
       <>
         
-        
-
+      
         <Modal  show={this.props.show} onHide={this.props.close}>
           <Modal.Header closeButton>
             <Modal.Title  className='newFont' style= {{color:'#D3634B'}}>{this.props.title}</Modal.Title>
@@ -24,6 +23,8 @@ class SelectedBeast extends React.Component {
 
           </Modal.Footer>
         </Modal>
+
+
       </>
     );
 
