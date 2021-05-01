@@ -9,7 +9,7 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: '',
+      data: dataJson,
     };
 
   }
@@ -21,7 +21,7 @@ class Main extends React.Component {
 
       });
     }
-    else if (e.target.value === 1) {
+    else if (Number (e.target.value) === 1) {
       this.setState({
         data: dataJson.filter(horn => {
           return horn.horns === 1;
@@ -29,7 +29,7 @@ class Main extends React.Component {
       });
     }
 
-    else if (e.target.value === 2) {
+    else if (Number (e.target.value) === 2) {
       this.setState({
         data: dataJson.filter(horn => {
           return horn.horns === 2;
@@ -37,7 +37,7 @@ class Main extends React.Component {
       });
     }
 
-    else if (e.target.value === 3) {
+    else if (Number (e.target.value) === 3) {
       this.setState({
         data: dataJson.filter(horn => {
           return horn.horns === 3;
@@ -55,27 +55,29 @@ class Main extends React.Component {
 
 
     return (
-      <CardColumns>
-        {this.state.data.map(horn => {
+      <>
+        <Myform hornsFunc={this.filterFunc} />
+        <CardColumns>
+          {this.state.data.map(horn => {
 
-          return (
-
-
-            <HornedBeast img={horn.image_url}
-              title={horn.title}
-              horns= {horn.horns}
-              disc={horn.description}
-              clickFunc={this.props.clickFunc} />
+            return (
 
 
+              <HornedBeast img={horn.image_url}
+                title={horn.title}
+                horns={horn.horns}
+                disc={horn.description}
+                clickFunc={this.props.clickFunc} />
 
 
 
 
-          );
-        })}
-      </CardColumns>
 
+
+            );
+          })}
+        </CardColumns>
+      </>
     );
   }
 

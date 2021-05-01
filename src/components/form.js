@@ -24,7 +24,7 @@ class Myform extends React.Component {
     return (
       <>
         <h2 className='select'>select number of Horns you want to preview</h2>
-        <Form.Control  className='select' onChange={this.props.hornsFilter} as="select" size="lg">
+        <Form.Control  className='select' onChange={this.props.hornsFunc} as="select" size="lg">
           <option value='All'>All</option>
           <option value='1'>1</option>
           <option value='2'> 2</option>
