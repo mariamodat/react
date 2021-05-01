@@ -6,7 +6,7 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import dataJson from './components/data.json';
 import SelectedBeast from './components/selectedBeast';
-import Myform from './components/form';
+// import Myform from './components/form';
 import React from 'react';
 
 class App extends React.Component {
@@ -26,19 +26,19 @@ class App extends React.Component {
     };
 
   }
-  updateData = (ourBeast) => {
-    this.setState({
-      data: ourBeast,
-    });
-  }
+  // updateData = (ourBeast) => {
+  //   this.setState({
+  //     data: ourBeast,
+  //   });
+  // }
 
 
-  selectFunc = (e) => {
-    this.setState({
-      horns: e.target.horns,
-    });
-    console.log(e.target.horns);
-  }
+  // selectFunc = (e) => {
+  //   this.setState({
+  //     horns: e.target.horns,
+  //   });
+  //   console.log(e.target.horns);
+  // }
 
   clickFunc = (event) => {
     this.setState({
@@ -49,6 +49,8 @@ class App extends React.Component {
     });
     console.log(event.target);
   };
+
+
   closeFunc = () => this.setState({ show: false });
   showFunc = () => this.setState({ show: true });
 
@@ -57,7 +59,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Myform updateHorns={this.updateData} />
+        {/* <Myform updateHorns={this.updateData} /> */}
         <SelectedBeast close={this.closeFunc}
           open={this.showFunc}
           show={this.state.show}
