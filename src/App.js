@@ -7,11 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import dataJson from './components/data.json';
 import SelectedBeast from './components/selectedBeast';
 import Myform from './components/form';
-
-
-// import Card from 'react-bootstrap/Card';
-
 import React from 'react';
+
 class App extends React.Component {
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
@@ -40,6 +37,7 @@ class App extends React.Component {
     this.setState({
       horns: e.target.horns,
     });
+    console.log(e.target.horns);
   }
 
   clickFunc = (event) => {
