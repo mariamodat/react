@@ -14,7 +14,7 @@ class Myform extends React.Component {
       beasts.filter(beast => {
         return beast.horns === numberOfHorns;
       });
-      console.log('selected horns value',event.target.value);
+      console.log('selected horns value ',event.target.value);
     }
     this.props.updateHorns(beasts);
   }
