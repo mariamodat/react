@@ -6,7 +6,7 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import dataJson from './components/data.json';
 import SelectedBeast from './components/selectedBeast';
-import Form from './components/form';
+import Myform from './components/form';
 
 
 // import Card from 'react-bootstrap/Card';
@@ -24,17 +24,16 @@ class App extends React.Component {
       horns: '',
       src: '',
       discription: '',
+      info: {},
 
     };
 
   }
-  // filterFuc = ()=> {
-  //   this.setState({
-
-
-  //   })
-  // }
-
+  updateData = (ourBeast) => {
+    this.setState({
+      data: ourBeast,
+    });
+  }
 
 
   selectFunc = (e) => {
@@ -56,20 +55,17 @@ class App extends React.Component {
   showFunc = () => this.setState({ show: true });
 
 
-
-
-
-
   render() {
     return (
       <div>
         <Header />
-        <Form />
+        <Myform updateHorns={this.updateData} />
         <SelectedBeast close={this.closeFunc}
           open={this.showFunc}
           show={this.state.show}
           src={this.state.src}
-          disc={this.state.discription} />
+          disc={this.state.discription}
+          title={this.state.title} />
         <Main clickFunc={this.clickFunc} />
 
         <Footer />

@@ -21,6 +21,7 @@ class Main extends React.Component {
 
             <HornedBeast img={horn.image_url}
               title={horn.title}
+              horns= {horn.horns}
               disc={horn.description}
               clickFunc={this.props.clickFunc} />
 
