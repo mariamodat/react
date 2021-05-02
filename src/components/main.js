@@ -44,6 +44,16 @@ class Main extends React.Component {
         })
       });
     }
+
+
+    else if (Number (e.target.value) === 100) {
+      this.setState({
+        data: dataJson.filter(horn => {
+          return horn.horns === 100;
+        })
+      });
+    }
+
     // console.log('dataJason.horns', dataJson.horns);
 
     console.log(this.state.data);

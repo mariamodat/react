@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import dataJson from './components/data.json';
 import SelectedBeast from './components/selectedBeast';
+
 // import Myform from './components/form';
 import React from 'react';
 
